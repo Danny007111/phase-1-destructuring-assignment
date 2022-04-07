@@ -38,7 +38,7 @@ let [bessie, ,dolly, babe, little] = eachFarmAnimals;
 
 // 3. Little the chicken had to go back to the coop, so now we're left with three. Let's use color variables of blackAndWhite, black, and pink.
 
-let [blackAndWhite, black, pink] = eachFarmAnimals;
+let [blackAndWhite, , black, pink, ] = eachFarmAnimals;
 
 // Arrays
 
@@ -64,13 +64,13 @@ let {muppetName, color, song, job, partner} = muppet;
 
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
 
-let {
+const {
   album: {
     theMuppetMovie: { 
-      song2: movingRightAlong,
-      song4: iHopeThatSomethingBetterComesAlong,
+      song2 = movingRightAlong,
+      song4 = iHopeThatSomethingBetterComesAlong,
     },
   },
-  nestedJob: hostOfTheMuppetShow,
-  nestedPartner: missPiggy
+  nestedJob = hostOfTheMuppetShow,
+  nestedPartner = missPiggy
  } = nestedMuppet;
